@@ -12,8 +12,8 @@
 
 | 目录 | 内容 | 状态 |
 |---|---|---|
-| ptr/ | 指针：swap、遍历、my_strlen/my_strcpy、二级指针 | 进行中 |
-| struct/ | 结构体、对齐、pack(1)、组包解包 | 待开始 |
+| ptr/ | 指针：swap、遍历、my_strlen/my_strcpy、二级指针 | ✅ swap/my_strlen/matrix；strcpy/反转/qsort 挂即时触发队列 |
+| struct/ | 结构体、对齐、pack(1)、组包解包 | ✅ frame_size(满分格子图)/frame_passing(传值vs指针+crc彩蛋)/align_quiz |
 | bit/ | 位操作四件套宏、位段提取 | 待开始 |
 | fp/ | 函数指针、回调、状态机表 | 待开始 |
 
@@ -42,7 +42,14 @@ gcc ptr/swap.c -o swap && ./swap     # Windows 下用 MinGW 或 VS Code + gcc
 - 错误码语义是二分锚点："安静的零"≠"描述符失败"≠"有电压无core ID"；
 - 灯语即遥测：PWR=供电、CNT=主机通信、RUN=目标链路。
 
+## C阶段毕业（2026-10-28，提前3天）
+
+- 入库练习：ptr/swap、ptr/my_strlen、ptr/matrix、struct/frame_size（对齐格子图手算满分）、struct/frame_passing（传值vs指针+异或校验彩蛋）、struct/align_quiz
+- 已看课程：115–127、118–122、155–158
+- 毕业理念：C只学到够用；缺口挂"即时触发队列"，在STM32里用到哪个补哪个
+- 下一站：10.29 STM32 W1 点灯（主线：普中HAL库版视频+攻略）
+
 ## TODO
 
-- [ ] 10.26–10.31 结构体/位运算/函数指针练习补齐
-- [ ] 11.1 首个 CubeMX 工程点灯 → 迁入 project-f407-daq 仓库
+- [ ] 10.29 W1：CubeMX/普中HAL例程点灯 → 建 project-f407-daq 仓库迁入
+- [ ] W2 微课：fp状态机（EXTI事件版）；W3：字符串三件套+预处理；W4：帧组包解包
